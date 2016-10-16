@@ -22,6 +22,7 @@ export class AppComponent {
   constructor(private renderer: Renderer, private authService: AuthService) {}
 
   private onShowModal() {
+    console.log('showing modal window');
     this.user = new User();
     this.errorMessage = null;
   }
